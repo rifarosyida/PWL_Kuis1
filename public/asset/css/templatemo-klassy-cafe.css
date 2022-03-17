@@ -922,7 +922,7 @@ menu
   overflow: hidden;
 }
 
-.card1 {
+/* .card1 {
   background-image: url(../images/menu-item-01.jpg);
 }
 .card2 {
@@ -936,7 +936,7 @@ menu
 }
 .card5 {
   background-image: url(../images/menu-item-05.jpg);
-}
+} */
 
 .info {
   position: relative;
