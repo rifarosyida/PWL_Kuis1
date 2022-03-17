@@ -11,7 +11,7 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                            
-                            <li class="scroll-to-section"><a href="{{url('/home')}}" class="{{ ($title == "Dz Fashion - Home" )? "active" : "" }}">Home</a></li>
+                            <li class="scroll-to-section"><a href="{{url('/')}}" class="{{ ($title == "Dz Fashion - Home" )? "active" : "" }}">Home</a></li>
                             <li class="scroll-to-section"><a href="{{url('/supplier')}}" class="{{ ($title == "Dz Fashion - Supplier" )? "active" : "" }}">Supplier</a></li>
                           
                             <li class="scroll-to-section"><a href="{{url('/barang')}}" class="{{ ($title == "Dz Fashion - Barang" )? "active" : "" }}">Barang</a></li>

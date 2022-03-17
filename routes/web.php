@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', [IndexController::class, 'index']);
+Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/pegawai', [PegawaiController::class, 'pegawai']);
 
