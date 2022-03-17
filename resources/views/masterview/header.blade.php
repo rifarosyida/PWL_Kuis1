@@ -10,8 +10,9 @@
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="{{url('/')}}" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="{{url('/supplier')}}">Supplier</a></li>
+                           
+                            <li class="scroll-to-section"><a href="{{url('/home')}}" class="{{ ($title == "Dz Fashion - Home" )? "active" : "" }}">Home</a></li>
+                            <li class="scroll-to-section"><a href="{{url('/supplier')}}" class="{{ ($title == "Dz Fashion - Supplier" )? "active" : "" }}">Supplier</a></li>
                            	
                         <!-- 
                             <li class="submenu">
@@ -23,9 +24,9 @@
                                 </ul>
                             </li>
                         -->
-                            <li class="scroll-to-section"><a href="{{url('/barang')}}">Barang</a></li>
-                            <li class="scroll-to-section"><a href="{{url('/pegawai')}}">Pegawai</a></li>
-                            <li class="scroll-to-section"><a href="{{url('/pelanggan')}}">Pelanggan</a></li>  
+                            <li class="scroll-to-section"><a href="{{url('/barang')}}" class="{{ ($title == "Dz Fashion - Barang" )? "active" : "" }}">Barang</a></li>
+                            <li class="scroll-to-section"><a href="{{url('/pegawai')}}" class="{{ ($title == "Dz Fashion - Pegawai" )? "active" : "" }}">Pegawai</a></li>
+                            <li class="scroll-to-section"><a href="{{url('/pelanggan')}}" class="{{ ($title == "Dz Fashion - Pelanggan" )? "active" : "" }}">Pelanggan</a></li>  
                             <!-- <li class="submenu">
                                 <a href="javascript:;">Features</a>
                                 <ul>

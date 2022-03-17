@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\BarangController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,22 +18,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/home', [IndexController::class, 'index']);
 
-Route::get('/pegawai', function () {
-    return view('pegawai');
-});
+Route::get('/pegawai', [PegawaiController::class, 'pegawai']);
 
-Route::get('/pelanggan', function () {
-    return view('pelanggan');
-});
+Route::get('/pelanggan', [PelangganController::class, 'pelanggan']);
 
-Route::get('/supplier', function () {
-    return view('supplier');
-});
+Route::get('/supplier', [SupplierController::class, 'supplier']);
 
-Route::get('/barang', function () {
-    return view('barang');
-});
+Route::get('/barang', [BarangController::class, 'barang']);
