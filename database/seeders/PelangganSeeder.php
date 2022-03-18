@@ -14,6 +14,5 @@ class PelangganSeeder extends Seeder
      */
     public function run()
     {
-       
-}
+    }
 }
