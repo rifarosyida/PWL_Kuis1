@@ -73,9 +73,9 @@
 	  });
 
 
-	$(function() {
-        $("#tabs").tabs();
-    });
+	// $(function() {
+    //     $("#tabs").tabs();
+    // });
 
 
 	$('.owl-menu-item').owlCarousel({

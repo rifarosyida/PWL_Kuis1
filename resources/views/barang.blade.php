@@ -20,8 +20,8 @@
                                 <div class="row">
                                     <div class="col-lg-6 offset-lg-3">
                                         <ul>
-                                        <li><a href='#tabs-1'><img src="{{asset('asset/images/female.png')}}" alt="">Female</a></li>
-                                          <li><a href='#tabs-2'><img src="{{asset('asset/images/male.png')}}" alt="">Male</a></a></li>
+                                            <li><a href="{{ url('barang/perempuan') }}"><img src="{{ asset('asset/images/female.png')}}" alt="">Female</a></li>
+                                            <li><a href="{{ url('barang/lelaki') }}"><img src="{{ asset('asset/images/male.png') }}" alt="">Male</a></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -29,7 +29,7 @@
                         </div>
                         <div class="col-lg-12">
                             <section class='tabs-content'>
-                                <article id="{{ $tabs }}">
+                                <article id="test">
                                     <div class="row">
                                         <?php $newCol = True; $innerLoop = 1; $innerRow = True; $isLeft = True;?>
                                         @foreach ($all_barang as $barang)
