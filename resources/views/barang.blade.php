@@ -7,8 +7,8 @@
             <div class="row">
                 <div class="col-lg-4 offset-lg-4 text-center">
                     <div class="section-heading">
-                        <h6>Klassy Week</h6>
-                        <h2>This Week’s Special Meal Offers</h2>
+                        <h6>Dina Zalfa Fashion</h6>
+                        <h3>Fashion is one of the most desirable industries in the world.</h3>
                     </div>
                 </div>
             </div>
@@ -20,8 +20,8 @@
                                 <div class="row">
                                     <div class="col-lg-6 offset-lg-3">
                                         <ul>
-                                          <li><a href='#tabs-1'><img src="asset/images/tab-icon-01.png" alt="">Female</a></li>
-                                          <li><a href='#tabs-2'><img src="asset/images/tab-icon-02.png" alt="">Male</a></a></li>
+                                        <li><a href='#tabs-1'><img src="{{asset('asset/images/female.png')}}" alt="">Female</a></li>
+                                          <li><a href='#tabs-2'><img src="{{asset('asset/images/male.png')}}" alt="">Male</a></a></li>
                                         </ul>
                                     </div>
                                 </div>
