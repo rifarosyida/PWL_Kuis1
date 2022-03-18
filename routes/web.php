@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::pattern('keyword', '[0-9a-zA-Z]+');
 Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/pegawai', [PegawaiController::class, 'pegawai']);
@@ -26,4 +26,5 @@ Route::get('/pelanggan', [PelangganController::class, 'pelanggan']);
 
 Route::get('/supplier', [SupplierController::class, 'supplier']);
 
-Route::get('/barang', [BarangController::class, 'barang']);
+// Route::get('/barang', [BarangController::class, 'barang']);
+Route::get('/barang/{keyword}',[BarangController::class, 'barang'])->name('perempuan');

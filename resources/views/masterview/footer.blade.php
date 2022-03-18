@@ -13,7 +13,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="logo">
-                        <a href="{{url('/')}}"><img src="asset/images/logo-2.png" alt="" style="width: 250px;height: 150px;"></a>
+                        <a href="{{url('/')}}"><img src="{{asset('asset/images/logo-2.png')}}" alt="" style="width: 250px;height: 150px;"></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12">

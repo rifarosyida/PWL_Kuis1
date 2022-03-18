@@ -19,15 +19,15 @@ https://templatemo.com/tm-558-klassy-cafe
 
 -->
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('asset/css/bootstrap.min.css')}}">
 
-    <link rel="stylesheet" type="text/css" href="asset/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('asset/css/font-awesome.css')}}">
 
-    <link rel="stylesheet" href="asset/css/templatemo-klassy-cafe.css">
+    <link rel="stylesheet" href="{{asset('asset/css/templatemo-klassy-cafe.css')}}">
 
-    <link rel="stylesheet" href="asset/css/owl-carousel.css">
+    <link rel="stylesheet" href="{{asset('asset/css/owl-carousel.css')}}">
 
-    <link rel="stylesheet" href="asset/css/lightbox.css">
+    <link rel="stylesheet" href="{{asset('asset/css/lightbox.css')}}">
 
     </head>
     
@@ -56,26 +56,26 @@ https://templatemo.com/tm-558-klassy-cafe
     @include('masterview.footer')
 
     <!-- jQuery -->
-    <script src="asset/js/jquery-2.1.0.min.js"></script>
+    <script src="{{asset('asset/js/jquery-2.1.0.min.js')}}"></script>
 
     <!-- Bootstrap -->
-    <script src="asset/js/popper.js"></script>
-    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="{{asset('asset/js/popper.js')}}"></script>
+    <script src="{{asset('asset/js/bootstrap.min.js')}}"></script>
 
     <!-- Plugins -->
-    <script src="asset/js/owl-carousel.js"></script>
-    <script src="asset/js/accordions.js"></script>
-    <script src="asset/js/datepicker.js"></script>
-    <script src="asset/js/scrollreveal.min.js"></script>
-    <script src="asset/js/waypoints.min.js"></script>
-    <script src="asset/js/jquery.counterup.min.js"></script>
-    <script src="asset/js/imgfix.min.js"></script> 
-    <script src="asset/js/slick.js"></script> 
-    <script src="asset/js/lightbox.js"></script> 
-    <script src="asset/js/isotope.js"></script> 
+    <script src="{{asset('asset/js/owl-carousel.js')}}"></script>
+    <script src="{{asset('asset/js/accordions.js')}}"></script>
+    <script src="{{asset('asset/js/datepicker.js')}}"></script>
+    <script src="{{asset('asset/js/scrollreveal.min.js')}}"></script>
+    <script src="{{asset('asset/js/waypoints.min.js')}}"></script>
+    <script src="{{asset('asset/js/jquery.counterup.min.js')}}"></script>
+    <script src="{{asset('asset/js/imgfix.min.js')}}"></script> 
+    <script src="{{asset('asset/js/slick.js')}}"></script> 
+    <script src="{{asset('asset/js/lightbox.js')}}"></script> 
+    <script src="{{asset('asset/js/isotope.js')}}"></script> 
     
     <!-- Global Init -->
-    <script src="asset/js/custom.js"></script>
+    <script src="{{asset('asset/js/custom.js')}}"></script>
     <script>
 
         $(function() {

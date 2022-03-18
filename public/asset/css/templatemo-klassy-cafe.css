@@ -1416,6 +1416,11 @@ offers
   position: relative;
   margin-bottom: 60px;
 }
+
+.tab-item {
+  max-height: 94px;
+}
+
 #offers .tabs-content img {
   float: left;
   width: 100px;
