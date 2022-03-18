@@ -22,9 +22,6 @@
                             <div class='info'>
                               <h1 class='title'>{{ $s->nama }}</h1>
                               <p class='description'>{{ $s->deskripsi}}</p>
-                              <div class="main-text-button">
-                                  <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                              </div>
                             </div>
                         </div>
                     </div>
