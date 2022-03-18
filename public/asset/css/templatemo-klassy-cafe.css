@@ -43,7 +43,17 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
+/* style pagination */
+.col-auto nav .pagination .page-item .page-link{
+    color: black;
+    background-color: white;
+    border-color: #e0c0a6;
+}
 
+.col-auto nav .pagination .page-item.active .page-link{
+  background-color: #e0c0a6;
+}
+/*  */
 .clearfix:after {
   content: ".";
   display: block;
