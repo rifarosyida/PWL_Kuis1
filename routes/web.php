@@ -28,3 +28,5 @@ Route::get('/supplier', [SupplierController::class, 'supplier']);
 
 // Route::get('/barang', [BarangController::class, 'barang']);
 Route::get('/barang/{keyword}',[BarangController::class, 'barang'])->name('perempuan');
+
+Route::get('/pelanggan/search', [PelangganController::class, 'search'])->name('pelanggan.search');

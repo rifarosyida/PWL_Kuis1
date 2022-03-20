@@ -1,6 +1,54 @@
     @extends('masterview.content')
 
     @section('content')
+  <!-- Tabel Pelanggan -->
+  <section class="section" id="row">
+  <div class="card shadow mb-4 mt-5">
+    <div class="card-header py-3 mt-5">
+        <h3 class="m-0 font-weight-bold text-center">Data Pelanggan</h3>
+    </div>
+    <div class="card-body">
+      <form action="{{ route('pelanggan.search') }}" method="GET">
+        <div class="d-flex justify-content-end">
+          <div class="input-group mb-3 col-sm-4">
+            <input type="text" class="form-control" placeholder="Search here" name="search" id="search">
+            <button class="btn btn-secondary" type="submit"> <i class="fas fa-search"></i> </button>
+          </div>
+        </div>
+      </form>          
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <tr>
+                       <th>ID</th>
+                        <th>Nama</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Alamat</th>
+                        <th>No HP</th>
+                        <th>Email</th>
+                    </tr>
+                     @foreach($all_pelanggan as $pelanggan)
+                     <tr>
+                      <td>{{($pelanggan->id)}}</td>
+                      <td>{{($pelanggan->nama)}}</td>
+                      <td>{{($pelanggan->tanggal_lahir)}}</td>
+                      <td>{{($pelanggan->jenis_kelamin)}}</td>
+                      <td>{{($pelanggan->alamat)}}</td>
+                      <td>{{($pelanggan->noHp)}}</td>
+                      <td>{{($pelanggan->email)}}</td>
+                     </tr>
+                        @endforeach
+            </table>
+
+            <div class="d-flex justify-content-center">
+              {{ $all_pelanggan->links()}}
+            </div>
+
+        </div>
+    </div>
+  </div>
+  </section>
+{{-- 
     <!-- ***** Reservation Us Area Starts ***** -->
     <section class="section" id="reservation">
         <div class="container">
@@ -107,6 +155,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- ***** Reservation Area Ends ***** -->
     @endsection

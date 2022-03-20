@@ -20,8 +20,8 @@
                                 <div class="row">
                                     <div class="col-lg-6 offset-lg-3">
                                         <ul>
-                                            <li><a href="{{ url('barang/perempuan') }}"><img src="{{ asset('asset/images/female.png')}}" alt="">Female</a></li>
-                                            <li><a href="{{ url('barang/lelaki') }}"><img src="{{ asset('asset/images/male.png') }}" alt="">Male</a></a></li>
+                                            <li><a href="{{ url('barang/perempuan') }}" class="{{ ($active == 'pr') ? 'barang-aktif' : ''  }}"><img src="{{ asset('asset/images/female.png')}}" >Female</a></li>
+                                            <li><a href="{{ url('barang/lelaki') }}" class="{{ ($active == 'lk') ? 'barang-aktif' : '' }}"><img src="{{ asset('asset/images/male.png') }}" >Male</a></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -29,7 +29,7 @@
                         </div>
                         <div class="col-lg-12">
                             <section class='tabs-content'>
-                                <article id="test">
+                                <article id="barangs">
                                     <div class="row">
                                         <?php $newCol = True; $innerLoop = 1; $innerRow = True; $isLeft = True;?>
                                         @foreach ($all_barang as $barang)
@@ -59,7 +59,7 @@
                                                 <h4>{{ $barang->nama }}</h4>
                                                 <p>{{ substr($barang->deskripsi, 0, 80) }}...</p>
                                                 <div class="price">
-                                                    <h6>Rp{{ $barang->harga }}</h6>
+                                                    <h6>Rp {{ $barang->harga }}</h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -72,7 +72,8 @@
                                         
                                         <?php $innerLoop++; ?>
 
-                                        @endforeach                                    
+                                        @endforeach   
+                                                                   
                                         
                                         {{-- <div class="col-lg-6">
                                             <div class="row">
@@ -90,13 +91,18 @@
                                                 </div>
                                             </div>
                                         </div> --}}
-                                    </div>
-                                </article>
+                                    </div>                                       
+                                </article>                                 
                             </section>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
+
+            <div class="d-flex justify-content-center mt-4">
+                {{ $all_barang->links() }}
+            </div>  
+
         </div>
     </section>
     <!-- ***** Chefs Area Ends ***** -->

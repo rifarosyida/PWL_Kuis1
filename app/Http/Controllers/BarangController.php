@@ -7,13 +7,18 @@ use Illuminate\Http\Request;
 class BarangController extends Controller
 {
     public function barang($keyword){
-        $data=Barang::where('kategori','=',$keyword)->get();
+        // $data=Barang::where('kategori','=',$keyword)->get();     
 
-        $tabs = ($keyword == 'perempuan') ? 'tabs-1' : 'tabs-2';
+
+        $aktif = ($keyword == 'perempuan') ? 'pr' : 'lk';
+
+        $data=Barang::where('kategori', '=', $keyword)->Paginate(
+            $perPage = 6, $columns = ['*'], $pageName = $keyword
+        );
 
         return view('barang')
         ->with('title', 'Dz Fashion - Barang')
         ->with('all_barang', $data)
-        ->with('tabs', $tabs);
+        ->with('active', $aktif);
     }
 }
