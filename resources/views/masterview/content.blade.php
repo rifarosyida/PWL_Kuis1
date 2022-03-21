@@ -28,24 +28,8 @@ https://templatemo.com/tm-558-klassy-cafe
     <link rel="stylesheet" href="{{asset('asset/css/owl-carousel.css')}}">
 
     <link rel="stylesheet" href="{{asset('asset/css/lightbox.css')}}">
-
-    <style>
-        .pagination .active .page-link {
-            background-color: #e0c0a6 !important;
-            border-color: #e0c0a6 !important;
-            color: white;
-        }
-
-        .pagination .page-link {
-            color: black !important;
-        }
-
-        .barang-aktif {
-            color: #e0c0a6 !important;
-        }
-    </style>
+   
     </head>
-    
     <body>
     
     <!-- ***** Preloader Start ***** -->

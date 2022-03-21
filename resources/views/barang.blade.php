@@ -31,7 +31,7 @@
                             <section class='tabs-content'>
                                 <article id="barangs">
                                     <div class="row">
-                                        <?php $newCol = True; $innerLoop = 1; $innerRow = True; $isLeft = True;?>
+                                        <?php $newCol = True; $innerLoop = 1; $isLeft = True;?>
                                         @foreach ($all_barang as $barang)
                                         
                                         @if ($newCol)
@@ -59,7 +59,13 @@
                                                 <h4>{{ $barang->nama }}</h4>
                                                 <p>{{ substr($barang->deskripsi, 0, 80) }}...</p>
                                                 <div class="price">
-                                                    <h6>Rp {{ $barang->harga }}</h6>
+                                                    @if ($barang->diskon > 0)
+                                                    <span class="reducedfrom">Rp. {{ $barang->harga }}</span>
+                                                    {{-- harga = harga- (harga*diskon) --}}
+                                                    <span class="actual">Rp. {{ ($barang->harga -= ($barang->harga * $barang->diskon)) }}</span><br>
+                                                    @else 
+                                                        <span class="actual">Rp. {{ $barang->harga }}</span><br>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>

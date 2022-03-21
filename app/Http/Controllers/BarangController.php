@@ -7,9 +7,7 @@ use Illuminate\Http\Request;
 class BarangController extends Controller
 {
     public function barang($keyword){
-        // $data=Barang::where('kategori','=',$keyword)->get();     
-
-
+     
         $aktif = ($keyword == 'perempuan') ? 'pr' : 'lk';
 
         $data=Barang::where('kategori', '=', $keyword)->Paginate(

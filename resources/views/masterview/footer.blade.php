@@ -1,6 +1,6 @@
 <footer>
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-4 col-xs-12">
                     <div class="right-text-content">
                             <ul class="social-icons">
