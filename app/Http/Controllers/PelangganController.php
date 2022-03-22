@@ -18,7 +18,7 @@ class PelangganController extends Controller
     }
 
     public function search(Request $request) {
-        $keyword = $request->search;
+        $keyword = $request->cari;
 
         $all_pelanggan = Pelanggan::where('nama', 'like', '%' . $keyword . '%')->paginate(10);
         return view('pelanggan')

@@ -8,10 +8,10 @@
         <h3 class="m-0 font-weight-bold text-center">Data Pelanggan</h3>
     </div>
     <div class="card-body">
-      <form action="{{ route('pelanggan.search') }}" method="GET">
+      <form action="{{ url('/pelanggan/search') }}" method="GET">
         <div class="d-flex justify-content-end">
           <div class="input-group mb-3 col-sm-4">
-            <input type="text" class="form-control" placeholder="Search here" name="search" id="search">
+            <input type="text" class="form-control" placeholder="Search here" name="cari" id="search">
             <button class="btn btn-secondary" type="submit"> <i class="fas fa-search"></i> </button>
           </div>
         </div>

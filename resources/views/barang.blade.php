@@ -34,13 +34,13 @@
                                         <?php $newCol = True; $innerLoop = 1; $isLeft = True;?>
                                         @foreach ($all_barang as $barang)
                                         
-                                        @if ($newCol)
+                                        @if ($newCol==True)
                                             <?php $innerLoop = 1; ?>
 
                                             <div class="col-lg-6">
                                                 <div class="row">
-                                                    <div class="{{ (($isLeft) ? 'left-list' : 'right-list') }}">
-                                                        @if ($isLeft)
+                                                    <div class="{{ (($isLeft==True) ? 'left-list' : 'right-list') }}">
+                                                        @if ($isLeft==True)
                                                             <?php $isLeft = False; ?>
                                                         @else
                                                             <?php $isLeft = True; ?>
@@ -70,7 +70,7 @@
                                             </div>
                                         </div>
                                                 
-                                        @if ($newCol)
+                                        @if ($newCol==True)
                                                 </div>
                                             </div>
                                         </div>
@@ -79,24 +79,7 @@
                                         <?php $innerLoop++; ?>
 
                                         @endforeach   
-                                                                   
-                                        
-                                        {{-- <div class="col-lg-6">
-                                            <div class="row">
-                                                <div class="right-list">
-                                                    <div class="col-lg-12">
-                                                        <div class="tab-item">
-                                                            <img src="assets/images/tab-item-04.png" alt="">
-                                                            <h4>Eggs Omelette</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
-                                                            <div class="price">
-                                                                <h6>$6.50</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> --}}
+                                            
                                     </div>                                       
                                 </article>                                 
                             </section>
