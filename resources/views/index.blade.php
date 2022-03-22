@@ -22,21 +22,21 @@
                           <!-- Item -->
                           <div class="item">
                             <div class="img-fill">
-                                <img src="asset/images/slide-1.jpg" alt="">
+                                <img src="{{asset('asset/images/slide-1.jpg')}}" alt="">
                             </div>
                           </div>
                           <!-- // Item -->
                           <!-- Item -->
                           <div class="item">
                             <div class="img-fill">
-                                <img src="asset/images/slide-2.png" alt="">
+                                <img src="{{asset('asset/images/slide-2.png')}}" alt="">
                             </div>
                           </div>
                           <!-- // Item -->
                           <!-- Item -->
                           <div class="item">
                             <div class="img-fill">
-                                <img src="asset/images/slide-3.jpg" alt="">
+                                <img src="{{asset('asset/images/slide-3.jpg')}}" alt="">
                             </div>
                           </div>
                           <!-- // Item -->
@@ -56,18 +56,22 @@
                     <div class="left-text-content">
                         <div class="section-heading">
                             <h6>About Us</h6>
-                            <h2>We Leave A Delicious Memory For You</h2>
+                            <h2>We Leave a Stylish Memory For You</h2>
                         </div>
-                        <p>Klassy Cafe is one of the best <a href="https://templatemo.com/tag/restaurant" target="_blank" rel="sponsored">restaurant HTML templates</a> with Bootstrap v4.5.2 CSS framework. You can download and feel free to use this website template layout for your restaurant business. You are allowed to use this template for commercial purposes. <br><br>You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please contact us for more information.</p>
+                        <p>DZ or Dina Zalfa Fashion eCommerce is a complete eCommerce that provides quality clothes from world-famous brands with up-to-date fashion models.
+                        Sell clothes for all genders with all types of clothes. The goods sold in the DZ eCommerce are directly from the brand supplier itself. So, the goods 
+                        are guaranteed original and exclusive.</p>
+                        <br>
+                        <p>The example of the clothes that we sell is:</p>
                         <div class="row">
                             <div class="col-4">
-                                <img src="asset/images/about-thumb-01.jpg" alt="">
+                                <img src="{{asset('asset/images/about-us-1.png')}}" alt="">
                             </div>
                             <div class="col-4">
-                                <img src="asset/images/about-thumb-02.jpg" alt="">
+                                <img src="{{asset('asset/images/about-us-2.png')}}" alt="">
                             </div>
                             <div class="col-4">
-                                <img src="asset/images/about-thumb-03.jpg" alt="">
+                                <img src="{{asset('asset/images/about-us-3.png')}}" alt="">
                             </div>
                         </div>
                     </div>
@@ -76,7 +80,7 @@
                     <div class="right-content">
                         <div class="thumb">
                             <a rel="nofollow" href="http://youtube.com"><i class="fa fa-play"></i></a>
-                            <img src="asset/images/about-video-bg.jpg" alt="">
+                            <img src="{{asset('asset/images/video-bg.png')}}" alt="">
                         </div>
                     </div>
                 </div>
